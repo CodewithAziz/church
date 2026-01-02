@@ -1,0 +1,42 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/church-website
+  branch: main # or master
+  site_domain: https://yourchurch.netlify.app
+
+media_folder: "assets/images"  # Where uploaded images are stored
+public_folder: "/assets/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Homepage"
+        name: "home"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - file: "about.html"
+        label: "About Page"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - file: "sermons.html"
+        label: "Sermons Page"
+        name: "sermons"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "content", widget: "markdown" }
+          - { label: "Video Link", name: "video", widget: "string" }
+
+      - file: "contact.html"
+        label: "Contact Page"
+        name: "contact"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Email", name: "email", widget: "string" }
