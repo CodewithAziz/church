@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>{{title}}</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      {{content}}
+    </section>
+
+    <section>
+      <h2>Video</h2>
+      <!-- Video will be embedded via CMS -->
+      <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Church Name</p>
+  </footer>
+</body>
+</html>
